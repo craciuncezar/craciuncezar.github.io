@@ -1,0 +1,106 @@
+/**
+ * Animations
+ */
+
+.fromTopIn {
+  transition: transform 1s ease, opacity 1s ease;
+
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.fromTopOut {
+  transition: transform 1s ease, opacity 1s ease;
+
+  transform: translate(0, -10px);
+  opacity: 0;
+}
+
+.fromBottomIn {
+  transition: transform 1s ease, opacity 1s ease;
+
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.fromBottomOut {
+  transition: transform 1s ease, opacity 1s ease;
+
+  transform: translate(0, 10px);
+  opacity: 0;
+}
+
+.fromLeftIn {
+  transition: transform 1s ease, opacity 1s ease;
+
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.fromLeftOut {
+  transition: transform 1s ease, opacity 1s ease;
+
+  transform: translate(-10px, 0);
+  opacity: 0;
+}
+
+.fromRightIn {
+  transition: transform 1s ease, opacity 1s ease;
+
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.fromRightOut {
+  transition: transform 1s ease, opacity 1s ease;
+
+  transform: translate(10px, 0);
+  opacity: 0;
+}
+
+.scaleUpIn {
+  transition: transform 1s ease, opacity 1s ease;
+
+  transform: scale(1, 1);
+  opacity: 1;
+}
+
+.scaleUpOut {
+  transition: transform 1s ease, opacity 1s ease;
+
+  transform: scale(1.05, 1.05);
+  opacity: 0;
+}
+
+.scaleDownIn {
+  transition: transform 1s ease, opacity 1s ease;
+
+  transform: scale(1, 1);
+  opacity: 1;
+}
+
+.scaleDownOut {
+  transition: transform 1s ease, opacity 1s ease;
+
+  transform: scale(0.7, 0.7);
+  opacity: 0;
+}
+
+.bounce {
+  animation-name: bounce;
+  transform-origin: center bottom;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    transform: translateY(0);
+  }
+  40%,
+  60% {
+    transform: translateY(-5px);
+  }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Craciun Cezar</title>
+    <link rel="icon" href="/images/logo.png" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../assets/css/animations.css" />
+    <link rel="stylesheet" href="../assets/css/main.min.css" />
+  </head>
+
+  <body>
+    <header class="header-project">
+      <a href="../index.html#portfolio" class="menuToggle">
+        <span>Back</span>
+      </a>
+    </header>
+    <section class="showcase">
+      <h2 class="app-name">Book Club - Your reading companion</h2>
+      <ul>
+        <li>
+          <img src="../images/icons-skills/icons-react.svg" alt="REACT" />
+          <div class="text">ReactJS</div>
+        </li>
+        <li>
+          <img src="../images/icons-skills/icon-nodejs.svg" alt="NodeJS" />
+          <div class="text">NodeJS</div>
+        </li>
+        <li>
+          <img src="../images/icons-skills/bootstrap.svg" alt="bootstrap" />
+          <div class="text">Bootstrap</div>
+        </li>
+
+        <li>
+          <img src="../images/icons-skills/icon-mysql.svg" alt="mysql" />
+          <div class="text">MySQL</div>
+        </li>
+      </ul>
+      <div class="project-wrapper">
+        <p>
+          An web application that keeps record of your books and help you
+          discover others.
+        </p>
+      </div>
+      <img src="../images/books/Register.PNG" />
+      <a
+        href="https://books-club-mern.herokuapp.com/"
+        class="button fit button-more-projects"
+        >LIVE DEMO</a
+      >
+    </section>
+    <section class="about-project">
+      <div class="project-wrapper">
+        <h2>About</h2>
+        <p>
+          This project was build for my web technologies university course. It
+          uses modern javascript web libraries such as ReactJS for the
+          clientside and NodeJS and Express for the backend.
+        </p>
+        <h2>Features</h2>
+        <p>
+          The app has a navbar which separates the site in 3 areas: My Books
+          which will hold the user created lists. Discover which will let you
+          see awarded books and bestsellers. Search which will let you search a
+          specific book by name.
+        </p>
+        <img src="../images/books/Discover.PNG" />
+        <p>
+          For the authentication the app is using Passport and JSON Web Tokens.
+          JSON Web Tokens is an authentication standard that works by assigning
+          and passing around an encrypted token in requests that helps to
+          identify the logged in user, instead of storing the user in a session
+          on the server and creating a cookie.
+        </p>
+        <img src="../images/books/Search.PNG" />
+        <p>
+          The data about about books and authors is gathered using goodreads and
+          google books web api. The user created lists is stored in a MySQL
+          relational database.
+        </p>
+        <img src="../images/books/BookLists.PNG" />
+      </div>
+    </section>
+    <section class="future-plan">
+      <div class="project-wrapper">
+        <h2>Future Plans</h2>
+        <p>
+          I have in plan to create a recommendation feature which will suggest
+          books based on the ones you saved in your lists and to fetch book
+          reviews data from the 3rd party apis. Also i want to add support for
+          sign in using Google or Facebook.
+        </p>
+
+        <p>
+          The application is open sourced and the code is
+          <span>
+            <a href="https://github.com/craciuncezar/books-react-node-app"
+              >available on github.</a
+            >
+          </span>
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
